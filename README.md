@@ -2,7 +2,7 @@
 
 Used to generate LetsEncrypt wildcard certificates.  
 After creating the certificates, fullchain and privkey will be concatenated into  
-`./ssl/<DOMAIN>/<DOMAIN>.pem`
+- `./ssl/<DOMAIN>/<DOMAIN>.pem`
 
 ## Build
 
