@@ -11,5 +11,6 @@ certbot certonly \
 if [ "$?" -ne "0" ]; then exit 1; fi
 
 DOMAIN=$(echo "${1}" | cut -d '.' -f 2,3)
+CERT_PATH="/etc/letsencrypt/archive/${DOMAIN}"
 
-cat /etc/letsencrypt/archive/${DOMAIN}/fullchain1.pem /etc/letsencrypt/archive/${DOMAIN}/privkey1.pem > /etc/letsencrypt/archive/${DOMAIN}/${DOMAIN}.pem
+cat ${CERT_PATH}/fullchain1.pem ${CERT_PATH}/privkey1.pem > ${CERT_PATH}/${DOMAIN}.pem
