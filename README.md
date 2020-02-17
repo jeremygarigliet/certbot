@@ -7,7 +7,7 @@ After creating the certificates, fullchain and privkey will be concatenated into
 ## Build
 
 ```bash
-docker build -t ith/certbot .
+docker build -t jeremygarigliet/certbot .
 ```
 
 ## Run
@@ -17,5 +17,5 @@ docker run \
   -ti \
   -v $(pwd)/ssl:/etc/letsencrypt/archive \
   -e EMAIL="email@address.here" \
-  ith/certbot "domain.com"
+  jeremygarigliet/certbot "domain.com"
 ```
