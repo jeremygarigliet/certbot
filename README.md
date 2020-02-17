@@ -15,6 +15,7 @@ docker build -t jeremygarigliet/certbot .
 ```bash
 docker run \
   -ti \
+  --rm \
   -v $(pwd)/ssl:/etc/letsencrypt/archive \
   -e EMAIL="email@address.here" \
   jeremygarigliet/certbot "domain.com"
