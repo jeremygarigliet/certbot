@@ -1,1 +1,3 @@
-ssl
+*.yml
+*.md
+.env

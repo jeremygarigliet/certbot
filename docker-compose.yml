@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+
+  certbot:
+    build: .
+    image: jeremygarigliet/certbot
+    container_name: certbot
+    restart: "no"
+    network_mode: bridge
+    environment:
+      EMAIL: ${EMAIL}
+      CERT_NAME: ${CERT_NAME}
+      CERT_OPTS: ${CERT_OPTS}
+    volumes:
+      - /etc/letsencrypt:/etc/letsencrypt
+      - ${DNS_INI}:/root/dns.ini:ro
