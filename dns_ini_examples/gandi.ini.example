@@ -1,0 +1,1 @@
+certbot_plugin_gandi:dns_api_key=YOUR_API_KEY_HERE
