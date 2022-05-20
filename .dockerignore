@@ -1,3 +1,5 @@
 *.yml
 *.md
 .env
+letsencrypt/
+*.ini
