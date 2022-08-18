@@ -19,7 +19,7 @@ ovh() {
     ${_OPTS} \
     --dns-ovh \
     --dns-ovh-credentials /root/dns.ini \
-    "${CERT_OPTS}"
+    ${CERT_OPTS}
     conc
 }
 
@@ -28,7 +28,7 @@ gandi() {
     ${_OPTS} \
     -a certbot-plugin-gandi:dns \
     --certbot-plugin-gandi:dns-credentials /root/dns.ini \
-    "${CERT_OPTS}"
+    ${CERT_OPTS}
     conc
 }
 
@@ -37,7 +37,7 @@ cloudflare() {
     ${_OPTS} \
     --dns-cloudflare \
     --dns-cloudflare-credentials /root/dns.ini \
-    "${CERT_OPTS}"
+    ${CERT_OPTS}
     conc
 }
 
@@ -46,7 +46,7 @@ digitalocean() {
     ${_OPTS} \
     --dns-digitalocean \
     --dns-digitalocean-credentials /root/dns.ini \
-    "${CERT_OPTS}"
+    ${CERT_OPTS}
     conc
 }
 
@@ -55,7 +55,7 @@ google() {
     ${_OPTS} \
     --dns-google \
     --dns-google-credentials /root/dns.ini \
-    "${CERT_OPTS}"
+    ${CERT_OPTS}
     conc
 }
 
@@ -64,7 +64,7 @@ linode() {
     ${_OPTS} \
     --dns-linode \
     --dns-linode-credentials /root/dns.ini \
-    "${CERT_OPTS}"
+    ${CERT_OPTS}
     conc
 }
 

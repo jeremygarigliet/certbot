@@ -12,5 +12,5 @@ services:
       CERT_NAME: ${CERT_NAME}
       CERT_OPTS: ${CERT_OPTS}
     volumes:
-      - /etc/letsencrypt:/etc/letsencrypt
+      - ${LETSENCRYPT_DIR}:/etc/letsencrypt
       - ${DNS_INI}:/root/dns.ini:ro
